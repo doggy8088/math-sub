@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>積木王國 — 分享卡片 (1200×630)</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        margin: 0;
+        overflow: hidden;
+      }
+      body {
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        background: linear-gradient(180deg, #bae6fd 0%, #e0f2fe 46%, #dcfce7 100%);
+        color: #1e293b;
+      }
+      .sky {
+        position: absolute;
+        inset: 0;
+      }
+      .ground {
+        position: absolute;
+        left: -80px;
+        right: -80px;
+        bottom: -260px;
+        height: 420px;
+        border-radius: 50%;
+        background: #a7f3d0;
+        box-shadow: 0 -10px 0 rgba(255, 255, 255, 0.5);
+      }
+      .cloud {
+        position: absolute;
+        background: #fff;
+        border-radius: 999px;
+        opacity: 0.75;
+      }
+      .cloud.c1 {
+        top: 60px;
+        left: 120px;
+        width: 190px;
+        height: 58px;
+      }
+      .cloud.c2 {
+        top: 120px;
+        left: 60px;
+        width: 120px;
+        height: 44px;
+      }
+      .cloud.c3 {
+        top: 78px;
+        right: 150px;
+        width: 160px;
+        height: 52px;
+      }
+      .wrap {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 64px 88px;
+      }
+      .copy {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+      .pill {
+        display: inline-block;
+        padding: 8px 20px;
+        border-radius: 999px;
+        background: #6366f1;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+      }
+      h1 {
+        margin: 22px 0 0;
+        font-size: 84px;
+        line-height: 1.05;
+        font-weight: 900;
+        letter-spacing: 0.01em;
+        background: linear-gradient(90deg, #4f46e5 0%, #d946ef 52%, #f97316 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      h2 {
+        margin: 10px 0 0;
+        font-size: 46px;
+        line-height: 1.2;
+        font-weight: 900;
+        color: #334155;
+      }
+      p {
+        margin: 18px 0 0;
+        font-size: 25px;
+        line-height: 1.5;
+        font-weight: 700;
+        color: #475569;
+        max-width: 620px;
+      }
+      .url {
+        margin-top: 26px;
+        font-size: 22px;
+        font-weight: 800;
+        color: #0f766e;
+      }
+      .art {
+        flex: 0 0 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+      }
+      .row {
+        display: flex;
+        gap: 14px;
+        align-items: flex-end;
+      }
+      .block {
+        border: 4px solid rgba(15, 23, 42, 0.16);
+        border-radius: 16px;
+        box-shadow: 0 12px 0 rgba(15, 23, 42, 0.12), inset 0 10px 0 rgba(255, 255, 255, 0.35);
+      }
+      .flat {
+        width: 330px;
+        height: 92px;
+        border-radius: 20px;
+        background: linear-gradient(180deg, #d8b4fe 0%, #c084fc 62%, #a855f7 100%);
+      }
+      .cube {
+        width: 100px;
+        height: 100px;
+      }
+      .cube.yellow {
+        background: linear-gradient(180deg, #fde047 0%, #facc15 62%, #eab308 100%);
+      }
+      .cube.green {
+        background: linear-gradient(180deg, #86efac 0%, #4ade80 62%, #22c55e 100%);
+      }
+      .cube.blue {
+        background: linear-gradient(180deg, #93c5fd 0%, #60a5fa 62%, #3b82f6 100%);
+      }
+      .caption {
+        font-size: 20px;
+        font-weight: 800;
+        color: #166534;
+        background: rgba(255, 255, 255, 0.72);
+        padding: 8px 18px;
+        border-radius: 999px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sky">
+      <div class="cloud c1"></div>
+      <div class="cloud c2"></div>
+      <div class="cloud c3"></div>
+      <div class="ground"></div>
+    </div>
+
+    <div class="wrap">
+      <div class="copy">
+        <span class="pill">國小數學 · 直式減法</span>
+        <h1>積木王國</h1>
+        <h2>4 位數減法大冒險</h2>
+        <p>用 3D 積木看懂「借位」：從個位開始，一位一位算給你看。</p>
+        <div class="url">math-sub.gh.miniasp.com</div>
+      </div>
+      <div class="art">
+        <div class="row"><span class="block flat"></span></div>
+        <div class="row">
+          <span class="block cube yellow"></span>
+          <span class="block cube green"></span>
+          <span class="block cube blue"></span>
+        </div>
+        <div class="caption">1 個十 = 10 個一</div>
+      </div>
+    </div>
+  </body>
+</html>
